@@ -1,0 +1,30 @@
+/* src/app/contact-us/contact-us.component.css */
+
+.contact-us-container {
+    max-width: 600px;
+    margin: auto;
+    color: beige;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  

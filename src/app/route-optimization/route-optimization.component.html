@@ -1,0 +1,23 @@
+<div class="route-optimization">
+    <h2>Route Optimization</h2>
+    <p>Optimize routes for your vehicles to improve efficiency and reduce fuel consumption.</p>
+  
+    <form (submit)="optimizeRoutes()">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" [(ngModel)]="startDate" required>
+  
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate" [(ngModel)]="endDate" required>
+  
+      <button type="submit">Optimize Routes</button>
+    </form>
+  
+    <!-- Display optimization results -->
+    <div *ngIf="optimizedRoutes">
+      <h3>Optimization Results</h3>
+      <ul>
+        <li *ngFor="let route of optimizedRoutes">{{ route }}</li>
+      </ul>
+    </div>
+  </div>
+  

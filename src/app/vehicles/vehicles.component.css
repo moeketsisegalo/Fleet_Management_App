@@ -1,0 +1,29 @@
+/* src/app/vehicles/vehicles.component.css */
+
+.vehicles {
+    padding: 20px;
+    color: #f2f2f2;
+    background-image: url('../../assets/background.jpg'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #040404;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #000000; /* Change to black */
+    color: #ffffff; /* Change text color to white for better visibility */
+  }
+  

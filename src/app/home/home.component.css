@@ -1,0 +1,16 @@
+/* src/app/home/home.component.css */
+
+.home-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../../assets/fleet4.jpg'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+  }
+  
+  /* ... rest of your styles ... */
+  

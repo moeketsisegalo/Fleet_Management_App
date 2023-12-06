@@ -1,0 +1,33 @@
+<!-- src/app/google-maps/google-maps.component.html -->
+<div>
+    <label for="searchAddress">Enter Place:</label>
+    <input type="text" id="searchAddress" [(ngModel)]="searchAddress" />
+  
+    <label for="searchPlace">Enter Town/City Name:</label>
+    <input type="text" id="searchPlace" [(ngModel)]="searchPlace" />
+  
+    <button (click)="search()">Search</button>
+  </div>
+  
+  <div *ngIf="mapResults.length > 0">
+    <h2>Map Results:</h2>
+    <ul>
+      <li *ngFor="let result of mapResults">
+        <strong>Title:</strong> {{ result.title }}<br />
+        <strong>Address:</strong> {{ result.address }}<br />
+        <strong>Country Code:</strong> {{ result.country_code }}<br />
+        <strong>Latitude:</strong> {{ result.latitude }}<br />
+        <strong>Longitude:</strong> {{ result.longitude }}<br />
+        <strong>URL:</strong> <a href="{{ result.url }}" target="_blank">{{ result.url }}</a><br />
+        <strong>Description:</strong> {{ result.desc }}<br />
+        <strong>Phone:</strong> {{ result.phone }}<br />
+        <strong>Image:</strong> <img src="{{ result.image }}" alt="Image" /><br />
+        <strong>Source:</strong> <a href="{{ result.source }}" target="_blank">{{ result.source }}</a><br />
+        <strong>Links:</strong> {{ result.links }}<br />
+        <strong>Hours:</strong> {{ result.hours }}<br />
+            <!-- Add more properties as needed -->
+      </li>
+    </ul>
+  </div>
+  
+  

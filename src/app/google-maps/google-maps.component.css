@@ -1,0 +1,60 @@
+/* src/app/google-maps/google-maps.component.css */
+div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: aliceblue;
+  }
+  
+  /* Group the input and label to align them */
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    flex: 1; /* Take up remaining space in the input group */
+    padding: 10px;
+  }
+  
+  button {
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: antiquewhite;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    background-color: white
+  }
+  
+  strong {
+    font-weight: bold;
+  }
